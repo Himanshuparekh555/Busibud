@@ -1,0 +1,30 @@
+/* -------------------------------------------
+    Layout
+---------------------------------------------- */
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    background: $white;
+    font-family: $font-primary;
+    scroll-behavior: smooth;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+section > div, section {
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+
+}

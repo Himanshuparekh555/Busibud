@@ -1,0 +1,41 @@
+/**=====================
+    default variables
+==========================**/
+
+//font 
+$font-primary: 'NunitoSans-Regular',Sans-Serif;
+$font-primary-black:'NunitoSans-Black',Sans-Serif;
+$font-primary-bold:'NunitoSans-Bold',Sans-Serif;
+$font-primary-semibold:'NunitoSans-SemiBold',Sans-Serif;
+$font-header: 'segui-bold',Sans-Serif;
+
+
+//color variables
+$black: #000000;
+$white: #ffffff;
+$light-white: #F8FAFC;
+$grey: #615C5C;
+
+$border:#707070;
+
+// Buttons
+$primary-button:#1492E6;
+$button-hover:#0073C7;
+
+
+// Media Queries
+@mixin media-mobile {
+    @media screen and (max-width : 980px) {
+        @content;
+    }
+}
+@mixin media-mobile-sm {
+    @media screen and (max-width : 768px) {
+        @content;
+    }
+}
+@mixin media-desktop {
+    @media screen and (min-width : 981px) {
+        @content;
+    }	
+}

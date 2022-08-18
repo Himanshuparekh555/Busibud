@@ -1,0 +1,410 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Mesox | Medical Landing Page HTML Template 
+    Description: This is Medical website
+    Author: Daddyscode
+    Author URI: https://daddyscode.com/
+
+    ----------------------------------------------------------------------------------- */
+/* 01 Mixin
+   02 config
+   04 base
+   05 components
+   06 theme   
+*/
+/* Mixin */
+/* config */
+/**=====================
+    default variables
+==========================**/
+/* base */
+/* -------------------------------------------
+    Layout
+---------------------------------------------- */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background: #ffffff;
+  font-family: "NunitoSans-Regular", Sans-Serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section > div, section {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+/*--------------------------------------------------------------
+ Header
+----------------------------------------------------------------*/
+header {
+  border-bottom: 1px solid #707070;
+  background: #ffffff;
+  padding: 30px 0 16px 0;
+}
+header .logo_Wrapper a img {
+  max-width: 180px;
+}
+header .navbar {
+  padding: 0;
+}
+header .navbar .navbar-nav > li > a {
+  color: #000000 !important;
+  padding: 0 !important;
+  font-size: 19px;
+  margin: 0 30px;
+  padding-top: 16px !important;
+  font-family: "segui-bold", Sans-Serif !important;
+}
+header .navbar .navbar-nav > li > a.dropdown-toggle::after {
+  content: "";
+  width: 11px;
+  height: 9px;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+/*--------------------------------------------------------------
+ Footer
+----------------------------------------------------------------*/
+footer {
+  background-color: #000000;
+  min-height: 370px;
+}
+footer .copyright {
+  padding: 50px 0;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "NunitoSans-Bold", Sans-Serif;
+}
+
+/* components */
+/* -------------------------------------------
+    Button
+---------------------------------------------- */
+.btn {
+  font-family: "NunitoSans-SemiBold", Sans-Serif;
+  background: #1492E6;
+  font-size: 23px;
+  color: #ffffff;
+  text-transform: capitalize;
+  padding: 17px 50px;
+  display: block;
+  position: relative;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+  -webkit-box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+}
+.btn:hover {
+  background: #0073C7;
+  color: #ffffff;
+}
+@media screen and (max-width: 980px) {
+  .btn {
+    padding: 12px 30px;
+  }
+}
+
+/* -------------------------------------------
+    Fonts
+---------------------------------------------- */
+@font-face {
+  font-family: "segui-bold";
+  src: url("../fonts/seguisb.eot");
+  src: url("../fonts/seguisb.eot");
+  src: local("☺"), url("../fonts/seguisb.woff") format("woff"), url("../fonts/seguisb.ttf") format("truetype"), url("../fonts/seguisb.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSans-Regular";
+  src: url("../fonts/NunitoSans-Regular.eot");
+  src: url("../fonts/NunitoSans-Regular.eot");
+  src: local("☺"), url("../fonts/NunitoSans-Regular.woff") format("woff"), url("../fonts/NunitoSans-Regular.ttf") format("truetype"), url("../fonts/NunitoSans-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSans-Black";
+  src: url("../fonts/NunitoSans-Black.eot");
+  src: url("../fonts/NunitoSans-Black.eot");
+  src: local("☺"), url("../fonts/NunitoSans-Black.woff") format("woff"), url("../fonts/NunitoSans-Black.ttf") format("truetype"), url("../fonts/NunitoSans-Black.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSans-Bold";
+  src: url("../fonts/NunitoSans-Bold.eot");
+  src: url("../fonts/NunitoSans-Bold.eot");
+  src: local("☺"), url("../fonts/NunitoSans-Bold..woff") format("woff"), url("../fonts/NunitoSans-Bold.ttf") format("truetype"), url("../fonts/NunitoSans-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSans-SemiBold";
+  src: url("../fonts/NunitoSans-SemiBold.eot");
+  src: url("../fonts/NunitoSans-SemiBold.eot");
+  src: local("☺"), url("../fonts/NunitoSans-SemiBold.woff") format("woff"), url("../fonts/NunitoSans-SemiBold.ttf") format("truetype"), url("../fonts/NunitoSans-SemiBold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -------------------------------------------
+    Title
+---------------------------------------------- */
+.title1 {
+  font-size: 35px;
+  font-family: "NunitoSans-Bold", Sans-Serif;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 980px) {
+  .title1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+
+.title2 {
+  font-size: 24px;
+  font-family: "NunitoSans-Bold", Sans-Serif;
+}
+
+.title3 {
+  font-size: 25px;
+  font-family: "NunitoSans-Black", Sans-Serif;
+}
+
+/*  theme */
+/*----------------------------------------------*/
+/*  Theme
+/*----------------------------------------------*/
+/* Main banner */
+.banner_text {
+  color: #000000;
+  max-width: 640px;
+}
+.banner_text h1 {
+  font-size: 40px;
+  line-height: 54px;
+  margin-bottom: 20px;
+  font-family: "NunitoSans-Black", Sans-Serif;
+}
+@media screen and (max-width: 980px) {
+  .banner_text h1 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+.banner_text p {
+  font-size: 18px;
+  font-family: "NunitoSans-Regular", Sans-Serif;
+  line-height: 24px;
+  margin-bottom: 60px;
+  color: #000000;
+}
+@media screen and (max-width: 767px) {
+  .banner_text p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+/* About Us */
+.aboutus {
+  background-color: #F8FAFC;
+}
+.aboutus .content {
+  padding-top: 180px;
+}
+.aboutus .content.content-top .card {
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 19px;
+}
+.aboutus .content .card {
+  border: none;
+}
+.aboutus .content .card .card-body {
+  padding: 38px 17px;
+}
+.aboutus .content .card-title {
+  font-size: 18px;
+  font-family: "NunitoSans-Bold", Sans-Serif;
+}
+.aboutus .content .card-text {
+  font-family: "NunitoSans-Regular", Sans-Serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Our Services */
+.services {
+  padding-top: 100px;
+}
+.services .content li {
+  list-style: none;
+  margin: 70px 0;
+}
+.services .content li .title2 {
+  margin-left: 35px;
+}
+.services .content li > div {
+  width: 650px;
+}
+@media screen and (max-width: 768px) {
+  .services .content li > div {
+    width: 100%;
+  }
+}
+.services .content li p {
+  font-size: 21px;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+.services .content li:nth-child(even) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.services .content li:nth-child(even) > div {
+  width: 470px;
+}
+@media screen and (max-width: 768px) {
+  .services .content li:nth-child(even) > div {
+    width: 100%;
+  }
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 180px 0;
+}
+.testimonials .title1 {
+  margin-bottom: 100px;
+}
+.testimonials .slider-block::after {
+  width: 110%;
+  height: 400px;
+  background-color: #F8FAFC;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+  position: absolute;
+  left: -55px;
+  right: -55px;
+  top: -40px;
+  content: "";
+  z-index: -1;
+}
+@media screen and (max-width: 980px) {
+  .testimonials .slider-block::after {
+    width: 100%;
+  }
+}
+.testimonials .testimonials-slider .owl-stage-outer {
+  padding: 40px 0;
+}
+.testimonials .testimonials-slider .owl-stage-outer .item {
+  padding: 25px;
+}
+.testimonials .testimonials-slider .owl-stage-outer .item .testimonials-box {
+  padding: 35px 27px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1607843137);
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 30px;
+}
+.testimonials .testimonials-slider .owl-stage-outer .item .testimonials-box .name {
+  font-size: 13px;
+  font-family: "NunitoSans-SemiBold", Sans-Serif;
+}
+.testimonials .testimonials-slider .owl-stage-outer .item .testimonials-box .subtitle {
+  color: #615C5C;
+  font-size: 13px;
+  font-family: "NunitoSans-SemiBold", Sans-Serif;
+}
+.testimonials .testimonials-slider .owl-stage-outer .item .testimonials-box p {
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 35px;
+  font-family: "NunitoSans-Regular", Sans-Serif;
+}
+.testimonials .testimonials-slider .owl-nav {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+.testimonials .testimonials-slider .owl-nav .owl-prev, .testimonials .testimonials-slider .owl-nav .owl-next {
+  width: 62px;
+  height: 62px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.1607843137);
+  box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+  font-size: 40px;
+}
+.testimonials .testimonials-slider .owl-nav .owl-prev.disabled, .testimonials .testimonials-slider .owl-nav .owl-next.disabled {
+  opacity: 0;
+}
+.testimonials .testimonials-slider .owl-nav .owl-prev:focus, .testimonials .testimonials-slider .owl-nav .owl-next:focus {
+  outline: none;
+}
+.testimonials .testimonials-slider .owl-nav .owl-prev {
+  position: absolute;
+  left: -85px;
+}
+@media screen and (max-width: 980px) {
+  .testimonials .testimonials-slider .owl-nav .owl-prev {
+    left: 0;
+  }
+}
+.testimonials .testimonials-slider .owl-nav .owl-next {
+  position: absolute;
+  right: -85px;
+}
+@media screen and (max-width: 980px) {
+  .testimonials .testimonials-slider .owl-nav .owl-next {
+    right: 0;
+  }
+}
+
+/* Brands */
+.brands {
+  padding: 0 0 150px 0;
+}
+.brands .title1 {
+  margin-bottom: 100px;
+}
+.brands .name {
+  font-size: 18px;
+  font-family: "NunitoSans-Bold", Sans-Serif;
+  margin-top: 18px;
+}

@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------
+ Footer
+----------------------------------------------------------------*/
+footer {
+    background-color: $black;
+    min-height: 370px;
+    & .copyright{
+        padding: 50px 0;
+        color: $white;
+        font-size: 18px;
+        font-family: $font-primary-bold;
+    }
+}

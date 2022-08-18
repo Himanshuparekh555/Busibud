@@ -1,0 +1,18 @@
+/* -------------------------------------------
+    Title
+---------------------------------------------- */
+.title1{
+    font-size:35px;
+    font-family: $font-primary-bold;
+    padding-bottom: 50px;
+    @include media-mobile {
+        font-size: 28px;
+        line-height: 35px;
+    }
+}
+.title2{
+    font-size: 24px;font-family: $font-primary-bold;
+}
+.title3{
+    font-size: 25px;font-family: $font-primary-black;
+}

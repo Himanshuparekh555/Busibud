@@ -1,0 +1,35 @@
+﻿@charset 'UTF-8';
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Mesox | Medical Landing Page HTML Template 
+    Description: This is Medical website
+    Author: Daddyscode
+    Author URI: https://daddyscode.com/
+
+    ----------------------------------------------------------------------------------- */
+
+/* 01 Mixin
+   02 config
+   04 base
+   05 components
+   06 theme   
+*/
+
+/* Mixin */
+@import "plugin/mixy-sass/mixy";
+
+/* config */
+@import "config/variables";
+
+/* base */
+@import "base/layout";
+@import "base/header/header";
+@import "base/footer/footer";
+
+/* components */
+@import "components/button";
+@import "components/fonts";
+@import "components/title";
+
+/*  theme */
+@import "theme/theme";

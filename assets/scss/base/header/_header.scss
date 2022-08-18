@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+ Header
+----------------------------------------------------------------*/
+
+header {
+    border-bottom: 1px solid $border;
+    background: $white;
+    padding: 30px 0 16px 0;
+
+        & .logo_Wrapper {
+            & a {
+                & img {
+                    max-width: 180px;
+                }
+            }
+        }
+        & .navbar {
+            padding: 0;
+            & .navbar-nav {
+            
+                & > li{
+                    & > a{
+                        color: $black !important;
+                        padding: 0 !important;
+                        font-size: 19px;
+                        margin: 0 30px;
+                        padding-top: 16px !important;
+                        font-family: $font-header !important;
+                        &.dropdown-toggle{
+                            &::after{
+                            content: "";
+                            width: 11px;
+                            height: 9px;
+                            border-right: 1px solid $black;
+                            border-top: 1px solid $black;
+                            @include transform(rotate(135deg));
+                        }
+                        }
+                    }
+                }
+            }
+        }
+}
